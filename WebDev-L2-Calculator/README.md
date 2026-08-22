@@ -32,6 +32,10 @@ A responsive calculator built with HTML, CSS, and JavaScript as part of my OASIS
 6. Use `AC` to clear the calculator.
 7. Use `←` to delete the last digit.
 
+## Live Demo
+
+[View Calculator](https://horlah-dev.github.io/OIBSIP/WebDev-L2-Calculator/)
+
 ## Author
 
 Raji Ridwan
