@@ -1,40 +1,64 @@
 # Calculator
 
-A responsive calculator built with HTML, CSS, and JavaScript as part of my OASIS INFOBYTE Web Development & Designing Internship.
+A fully functional browser-based calculator built with HTML5, CSS3, and vanilla JavaScript. The calculator provides a clean and responsive interface for performing basic arithmetic operations.
 
 ## Features
 
-- Basic arithmetic operations: addition, subtraction, multiplication, and division
-- Decimal number calculations
-- Clear and delete functions
-- Error handling for division by zero
-- Sequential calculations
-- Previous calculation display
-- Responsive design for different screen sizes
+* Display screen for current input and results
+* Number buttons from 0–9
+* Decimal point support
+* Addition (+)
+* Subtraction (−)
+* Multiplication (×)
+* Division (÷)
+* Equals (=) button for calculating results
+* Clear (C) button
+* Backspace button
+* Division-by-zero error handling
+* Sequential operator operations
+* Responsive layout for desktop and mobile devices
+* CSS Grid button layout
+* JavaScript event listeners for calculator controls
+* No inline `onclick` attributes
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
 
-## Screenshot
+## Project Structure
 
-![Calculator Screenshot](screenshot.png)
+```text
+WebDev-L2-Calculator/
+├── index.html
+├── index.css
+├── index.js
+├── README.md
+└── screenshot.png
+```
 
-## How to Use
+## How It Works
 
-1. Open the calculator in your browser.
-2. Enter numbers using the calculator buttons.
-3. Select an arithmetic operator.
-4. Enter the next number.
-5. Press `=` to display the result.
-6. Use `AC` to clear the calculator.
-7. Use `←` to delete the last digit.
+Users can enter numbers and arithmetic operators using the calculator buttons. The JavaScript handles button interactions, processes the mathematical operations, updates the display, and provides error handling for invalid operations such as division by zero.
+
+The calculator also includes a clear button for resetting the calculation and a backspace button for removing the most recently entered character.
 
 ## Live Demo
 
-[View Calculator](https://horlah-dev.github.io/OIBSIP/WebDev-L2-Calculator/)
+[View Live Calculator](https://horlah-dev.github.io/OIBSIP/WebDev-L2-Calculator/)
+
+## Screenshot
+
+![Calculator](screenshot.png)
+
+## OASIS INFOBYTE Internship
+
+This project was completed as part of the OASIS INFOBYTE Web Development & Designing Internship.
+
+* Track: Web Development & Designing
+* Level: Level 2
+* Task: Task 1 — Calculator
 
 ## Author
 
