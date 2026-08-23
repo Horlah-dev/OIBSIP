@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #242424;
+    background-color: #f4f1ea;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1f2933;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+}
+
+.tagline {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #d9e2ec;
+}
+
+.portrait {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.portrait img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.portrait p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #5f6368;
+    font-style: italic;
+}
+
+.biography {
+    padding: 90px 20px;
+    background-color: #ffffff;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.biography-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.biography-content p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+.timeline {
+    padding: 90px 20px;
+    background-color: #e8e1d5;
+}
+
+.timeline-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid #c7beb0;
+}
+
+.timeline-year {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2933;
+}
+
+.timeline-content h3 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.timeline-content p {
+    color: #4b5563;
+}
+
+.quote-section {
+    padding: 100px 20px;
+    background-color: #1f2933;
+    color: #ffffff;
+    text-align: center;
+}
+
+.quote-section blockquote {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.quote-section blockquote p {
+    font-family: Georgia, serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.quote-section cite {
+    display: block;
+    margin-top: 25px;
+    font-size: 1rem;
+    font-style: normal;
+    color: #d9e2ec;
+}
+
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #111827;
+    color: #d9e2ec;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        min-height: 60vh;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .portrait {
+        margin: 50px auto;
+    }
+
+    .biography,
+    .timeline {
+        padding: 60px 20px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 25px 0;
+    }
+
+    .timeline-year {
+        font-size: 1.3rem;
+    }
+
+    .quote-section {
+        padding: 70px 20px;
+    }
+
+    .quote-section blockquote p {
+        font-size: 1.7rem;
+    }
+}
