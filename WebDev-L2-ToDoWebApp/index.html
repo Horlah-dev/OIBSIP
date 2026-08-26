@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="todo-app">
+
+        <header class="app-header">
+            <p class="eyebrow">Daily Planner</p>
+            <h1>My To-Do List</h1>
+            <p class="subtitle">Organize your tasks and stay productive.</p>
+        </header>
+
+        <section class="task-input-section">
+            <form id="task-form">
+                <label for="task-input" class="sr-only">Enter a task</label>
+
+                <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off">
+
+                <button type="submit" id="add-task-btn"> Add Task</button>
+            </form>
+        </section>
+
+        <section class="tasks-section">
+
+            <div class="task-list-container">
+                <div class="list-header">
+                    <h2>Pending Tasks</h2>
+                    <span id="pending-count">0 pending</span>
+                </div>
+
+                <ul id="pending-list" class="task-list"></ul>
+
+                <p id="pending-empty" class="empty-message">
+                    No pending tasks. You're all caught up!
+                </p>
+            </div>
+
+            <div class="task-list-container">
+                <div class="list-header">
+                    <h2>Completed Tasks</h2>
+                    <span id="completed-count">0 completed</span>
+                </div>
+
+                <ul id="completed-list" class="task-list"></ul>
+
+                <p id="completed-empty" class="empty-message"> No completed tasks yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
