@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Register</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+
+<section class="register-container">
+    <div class="register-info">
+        <h1>NOVA</h1>
+        <h3>Start Your Productive Journey.</h3>
+        <p>Create your NOVA account and take control of your tasks, goals, and daily productivity.</p>
+    </div>
+
+    <div class="register-card">
+        <h2>Create Account</h2>
+        <p>Fill in your details to get started.</p>
+
+        <form class="register-form" id="registerForm">
+            <label for="name">Full Name:</label>
+            <input type="text"id="name" required placeholder="Enter your full name">
+            <span id="fullNameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+            <span id="emailError"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="Create a password">
+            <span id="passwordError"></span>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" required placeholder="Confirm your password">
+            <span id="confirmPassError"></span>
+
+            <button type="submit">Create Account</button>
+            <span id="success-message"></span>
+            <p class="login-link">Already have an account? <a href="login.html">Log In</a></p>
+        </form>
+    </div>
+</section>
+<script src="../index.js"></script>
+</body>
+
+</html>

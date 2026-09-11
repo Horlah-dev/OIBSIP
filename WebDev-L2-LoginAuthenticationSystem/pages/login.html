@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Platform</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <section class="login-container">
+
+        <div class="login-info">
+        <h1>NOVA</h1>
+        <h3>Stay Organized. Stay Productive.</h3>
+        <p> Manage your tasks, track your progress, and stay organized with our intuitive task management platform.</p>
+        </div>
+        
+    <div class="login-card">
+        <h2>Welcome Back</h2>
+        <p>Please enter your credentials to log in.</p>
+
+        <form class="login-form" id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+            <span id="emailErrors"></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+            <span id="passwordErrors"></span>
+            <p class="forget-password"><a href="forgot-password.html">Forgot your password?</a></p>
+            <button type="submit">Log In</button>
+
+            <p class="register">Don't have an account? <a href="register.html">Register here</a></p>
+            <span id="success-login"></span>
+        </form>
+    </div>
+    </section>
+    <script src="../index.js"></script>
+</body>
+</html>

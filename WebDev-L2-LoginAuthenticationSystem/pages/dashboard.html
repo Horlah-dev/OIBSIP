@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA Dashboard</title>
+
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+            <div class="dashboard-logo">
+                <h1>NOVA</h1>
+            </div>
+
+            <div class="dashboard-user">
+                <div class="user-avatar">R</div>
+
+                <div class="user-info">
+                    <span class="user-name">User</span>
+                    <span class="user-email">user@example.com</span>
+                </div>
+
+                <button type="button" id="logoutBtn">Logout</button>
+            </div>
+        </header>
+
+        <div class="dashboard-layout">
+            <aside class="dashboard-sidebar">
+                <nav class="dashboard-nav" aria-label="Dashboard navigation">
+
+                    <a href="dashboard.html" class="nav-item active">Dashboard</a>
+
+                    <a href="#tasks" class="nav-item">My Tasks</a>
+                </nav>
+            </aside>
+
+            <main class="dashboard-main">
+
+                <section class="welcome-section">
+                    <div>
+                        <p class="section-label">Dashboard</p>
+
+                        <h2>Hi, <span id="dashboardUserName">User</span> 👋</h2>
+                        <p>Stay focused, stay organized, and get things done.</p>
+                    </div>
+                </section>
+
+                <section class="stats-section" aria-label="Task statistics">
+
+                    <article class="stat-card">
+                        <span class="stat-label">Total Tasks</span>
+                        <strong id="totalTasks">0</strong>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-label">Completed</span>
+                        <strong id="completedTasks">0</strong>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-label">Remaining</span>
+                        <strong id="remainingTasks">0</strong>
+                    </article>
+                </section>
+
+                <section class="tasks-section" id="tasks">
+
+                    <div class="tasks-header">
+                        <div>
+                            <p class="section-label">Productivity</p>
+                            <h2>My Tasks</h2>
+                        </div>
+                    </div>
+
+                    <form class="task-form" id="taskForm">
+                        <label for="taskInput" class="sr-only">Add a new task</label>
+
+                        <input type="text" id="taskInput" placeholder="What do you need to accomplish?" autocomplete="off">
+                        <button type="submit">Add Task</button>
+                    </form>
+
+                    <div class="task-list-container">
+                        <div class="task-group">
+                            <div class="task-group-header">
+                                <h3>Pending Tasks</h3>
+                                <span id="pendingCount">0</span>
+                            </div>
+
+                            <ul id="pendingList" class="task-list"></ul>
+                        </div>
+
+                        <div class="task-group">
+
+                            <div class="task-group-header">
+                                <h3>Completed Tasks</h3>
+                                <span id="completedCount">0</span>
+                            </div>
+
+                            <ul id="completedList" class="task-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="empty-state" id="emptyState">
+                        <h3>No tasks yet</h3>
+                        <p>
+                            Start by adding your first task and take the next step
+                            toward a more productive day.
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="../index.js"></script>
+
+</body>
+</html>
+
