@@ -76,20 +76,20 @@ WebDev-L2-LoginAuthenticationSystem/
 
 ### **Landing Page**
 
-![NOVA Landing Page](screenshot.png)
+![NOVA Landing Page](Screenshot.png)
 
 
 ### **Register Page**
 
-![NOVA Register Page](screenshot(65).png)
+![NOVA Register Page](Screenshot(65).png)
 
 ### **Login Page**
 
-![NOVA Login Page](screenshot(66).png)
+![NOVA Login Page](Screenshot(66).png)
 
 ### **Forgot Password Page**
 
-![NOVA Forgot Password](screenshot(68).png)
+![NOVA Forgot Password](Screenshot(68).png)
 
 ### **Dashboard**
 
